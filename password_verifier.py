@@ -6,6 +6,7 @@ while True:
     # La password deve essere lunga almeno 8 caratteri
     if (len(password) < 8) :
         print("Lunghezza passowrd errata, almeno 8 caratteri!")
+        valida = False
     
 
     # La password deve contenere almeno un carattere maiuscolo
