@@ -8,7 +8,6 @@ while True:
         print("Lunghezza passowrd errata, almeno 8 caratteri!")
         valida = False
     
-
     # La password deve contenere almeno un carattere maiuscolo
     if not re.search("[A-Z]+", password):
         print("La password deve contenere almeno un carattere maiuscolo!")
@@ -22,9 +21,10 @@ while True:
         print("La password deve contenere almeno un numero!")
         valida = False
     # La password deve contenere almeno un carattere speciale: .,_-
-    if not re.search("[\.,_-]+", password):
+    if not re.search("[\.,_\-]+", password):
         print("La password deve contenere almeno un carattere speciale!")
         valida = False
+        
     if valida:
         print("La password è valida!")
         break
